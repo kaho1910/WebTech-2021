@@ -1,0 +1,24 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.left {
+    background-color: white/*#cbb5fd*/
+    ;
+    padding: 20px;
+    float: left;
+    width: 40%;
+}
+
+.cvphoto {
+    background-color: #ffffff;
+    padding: 20px;
+    float: left;
+    width: 30%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

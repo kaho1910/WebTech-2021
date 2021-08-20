@@ -1,0 +1,35 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 100px;
+    height: 75px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 36px;
+}
+
+td {
+    font-weight: 500;
+}
+
+.out {
+    color: lightsalmon;
+}
+
+.container {
+    margin: auto;
+    height: 550px;
+    width: 700px;
+}

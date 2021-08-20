@@ -1,0 +1,64 @@
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.container {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    max-width: 90%;
+    top: 5%;
+    left: 5%;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+p {
+    width: 90%;
+    padding: 5%;
+    font-size: 18px;
+}
+
+.credit {
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: orange;
+}
+
+a:active {
+    color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}

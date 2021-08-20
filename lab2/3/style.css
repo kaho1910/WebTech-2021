@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: Beige;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    background-color: #2255A4;
+    padding: 5px;
+    height: 65px;
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    background-color: #FE6612;
+    width: 100%;
+    padding: 1%;
+}
+
+a {
+    padding: 9px;
+    font-size: 24px;
+    color: brown;
+}
+
+a:active {
+    color: dodgerblue;
+}
+
+p {
+    text-align: center;
+    padding: px;
+    margin: 0;
+}
+
+ul {
+    margin: auto;
+}
+
+div.container {
+    padding: 30px;
+    text-align: center;
+}
+
+button {
+    top: 0;
+    position: absolute;
+    width: 120px;
+    height: 75px;
+    background-color: #2255A4;
+    font-size: 24px;
+    color: rgb(245, 245, 245);
+    border: none
+}
+
+button:hover {
+    font-size: 28px;
+    background-color: #163769;
+}
+
+.slide {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.slide figure {
+    position: relative;
+    margin: 0;
+    left: 0;
+    display: flex;
+    animation: 15s slider infinite forwards;
+}
+
+.slide figure img {
+    width: 50%;
+    padding-top: 0%;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    24% {
+        left: 0;
+    }
+    25% {
+        left: -100%
+    }
+    49% {
+        left: -100%
+    }
+    50% {
+        left: -200%
+    }
+    74% {
+        left: -200%
+    }
+    75% {
+        left: -300%
+    }
+    99% {
+        left: -300%
+    }
+}
+
+.container img {
+    padding-top: 150px;
+    width: 30%;
+    height: 100%;
+}
