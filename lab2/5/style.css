@@ -2,8 +2,22 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-color: #cafff6;
+}
+
+h1 {
+    color: #2c6d8e;
+}
+
 table {
     border-collapse: collapse;
+    background-color: #d4ffbb;
+    width: 700px;
+}
+
+th {
+    background-color: #36beb5;
 }
 
 th,
@@ -15,21 +29,26 @@ td {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 3px solid #36beb5;
     text-align: center;
     font-size: 36px;
 }
 
 td {
+    color: #17abb7;
     font-weight: 500;
 }
 
 .out {
-    color: lightsalmon;
+    color: #8ae0a4;
 }
 
-.container {
-    margin: auto;
-    height: 550px;
-    width: 700px;
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
