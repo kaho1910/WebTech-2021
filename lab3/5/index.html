@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="scripts.js" async></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Lab3-5</title>
+</head>
+
+<body>
+    <div class="card" style="width: 70%;">
+        <div class="card-header">
+            <h1>ผลรางวัลกินแบ่งรัฐบาล</h1>
+            <h5 class="card-subheader mb-2 text-muted" id="date"></h5>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <h3>รางวัลที่ 1</h3>
+                    <h3 id="first"></h3>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h5>รางวัลเลขหน้า 3 ตัว</h5>
+                        </td>
+                        <td>
+                            <h4>เลขท้าย 2 ตัว</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 id="front3"></h5>
+                        </td>
+                        <td>
+                            <h4 id="back2"></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5>รางวัลเลขท้าย 3 ตัว</h5>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 id="back3"></h5>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <center>
+                <button type="button" class="btn btn-outline-secondary" onclick="random()">Random</button>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

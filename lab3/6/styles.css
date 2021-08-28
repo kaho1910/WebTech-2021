@@ -1,0 +1,63 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+hr {
+    margin-top: 0;
+    margin-left: 0;
+    border-top: 2pt solid rgba(0, 0, 0, 0.3);
+    width: 70%;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 3%;
+    width: 45%;
+    border-radius: 20px;
+}
+
+.card {
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 10%;
+    background-image: url("https://i.picsum.photos/id/302/1728/1080.jpg?hmac=HlMkTqLQIirH_eozQ6CaQzdfukIGHfvGqh0uxc6CSKQ");
+    background-size: cover;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 25px 25px 25px #888888;
+}
+
+.card-body {
+    padding-bottom: 5%;
+}
+
+.card-title {
+    padding-top: 3%;
+}
+
+.card-subtitle {
+    padding-bottom: 4%;
+    color: rgb(100, 100, 100);
+}
+
+.form-control:focus {
+    border-color: grey;
+    box-shadow: 0 0 0 0.2rem rgb(200 200 200 / 75%);
+    ;
+}
+
+.btn {
+    margin-top: 0;
+}

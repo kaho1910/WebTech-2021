@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" async></script>
+    <title>Lab-6</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Create your own card</h1>
+        <form id="myForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Full Name" oninput="update(this)">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" placeholder="09xxxxxxxx" oninput="update(this)">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="example@example.com" oninput="update(this)">
+            </div>
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" class="form-control" id="company" placeholder="Example Corp." oninput="update(this)">
+                <p style="margin-bottom: 0;">* auto update when input</p>
+            </div>
+            <button type="button" onclick="clearValue()" class="btn btn-secondary btn-lg btn-block">Clear</button>
+        </form>
+    </div>
+    <div style="width: 45%;">
+        <h4 style="width: 75%;margin-left: 45%;">your card</h4>
+        <div class="card">
+            <i class="fa fa-bookmark-o" style="font-size:36px;position: absolute;right: 2%;top: 2%;"></i>
+            <div class="card-body">
+                <h2 class="card-title" id="fullNameCard">Full Name</h2>
+                <hr>
+                <h3 class="card-subtitle" id="phoneCard">09xxxxxxxx</h3>
+                <h3 class="card-subtitle" id="emailCard">example@example.com</h3>
+                <h3 class="card-subtitle" id="companyCard">Example Corp.</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
