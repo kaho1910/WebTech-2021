@@ -1,0 +1,55 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+div,
+form {
+    margin: auto;
+}
+
+form {
+    margin-left: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+    height: 6vw;
+    width: 48vw;
+}
+
+#table {
+    width: 48vw;
+    height: 48vw;
+}
+
+td {
+    width: 6vw;
+    height: 6vw;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 10px;
+}

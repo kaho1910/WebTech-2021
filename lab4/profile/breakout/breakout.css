@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "PixelSplitter";
+    src: url("//db.onlinewebfonts.com/t/03d72a0482b2bc12a4f8ab59354fd4af.eot");
+    src: url("//db.onlinewebfonts.com/t/03d72a0482b2bc12a4f8ab59354fd4af.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/03d72a0482b2bc12a4f8ab59354fd4af.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/03d72a0482b2bc12a4f8ab59354fd4af.woff") format("woff"), url("//db.onlinewebfonts.com/t/03d72a0482b2bc12a4f8ab59354fd4af.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/03d72a0482b2bc12a4f8ab59354fd4af.svg#PixelSplitter") format("svg");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    background-image: url("https://media.discordapp.net/attachments/798210216503672872/807651720050114610/qqq.jpg?width=752&height=564");
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/c9/46/27/c94627ca6c5147bc87157df09027ded3.gif");
+    background-size: cover;
+}
+
+.swal-text {
+    font-family: "PixelSplitter", sans-serif;
+    font-size: 25px;
+}
+
+.swal-button {
+    font-family: "PixelSplitter", sans-serif;
+    color: #0009;
+}
