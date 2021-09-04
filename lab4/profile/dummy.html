@@ -15,15 +15,15 @@
     <title>Dummy</title>
 </head>
 
-<body>
+<body style="scroll-behavior: smooth;overflow-x: hidden">
     <!-- profile -->
-    <div class="box profile" style="width:50%;align-items:center;">
-        <img src="img/profile.jpeg" width="50%" alt="profile">
+    <div class="box preview" style="width:50%;align-items:center;">
+        <img id="profile" src="img/profile.jpeg" width="50%" alt="profile" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
     </div>
-    <div class="box aboutme" style="width:50%;">
+    <div class="box preview" style="width:50%;" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
         <div class="textbox" style="font-size:80%">
             <h1 style="margin-bottom: 5px;margin-top: 0;text-align: center;">แนะนำตัว</h1>
-            <hr style="width: 70%;margin-top: 0;">
+            <hr class="hline" style="width: 70%;margin-top: 0;">
             <p><b>ชื่อ</b> : ธีรวีร์</p>
             <p><b>นามสกุล</b> : ฐิติวัฒนากรศิริ</p>
             <p><b>ชื่อเล่น</b> : ตะวัน</p>
@@ -32,96 +32,124 @@
             <p><b>ศาสนา</b> : -</p>
         </div>
     </div>
-    <div class="box preview" style="width:100%;">
+    <div class="box preview" style="width:100%;" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
         <div class="textbox" style="padding:1vw; width:50%">
             <h1 style="text-align: center; margin: 0">ข้อมูลเบื้องต้น</h1>
-            <hr style="width: 50%;margin-top: 0;">
+            <hr class="hline" style="width: 50%;margin-top: 0;">
             <div class="preview">
                 <div style="width:45%; margin-left:0.5vw; padding-right: 0.5vw;font-size: 70%;">
-                    <p><b>กีฬาที่ชอบ</b> : แบตมินตัน วอลเล่บอล</p>
-                    <p><b>กิจกรรมที่ชอบ</b> : นั่งชิวๆในสวน/ทะเล นั่งหน้าคอมเฉยๆ เล่นเกม ถ่ายรูป นอน</p>
+                    <p><b>กีฬาที่ชอบ</b> : แบตมินตัน วอลเลย์บอล</p>
+                    <p><b>กิจกรรมที่ชอบ</b> : นั่งชิว นั่งหน้าคอมเฉยๆ ดูอนิเมะ เล่นเกม ถ่ายรูป นอน </p>
+                    <p><b>สถานที่ที่ชอบ</b> : สวน ห้าง ทะเล</p>
                     <p><b>อาหารที่ชอบ</b> : อาหารญี่ปุ่น, อาหารตะวันตก, ฟาสต์ฟู้ด, ก๋วยเตี๋ยว, กะเพรา</p>
+                    <p><b>ขนมที่ชอบ</b> : ชอคโกแลต ไอติม เค้ก</p>
                 </div>
                 <div style="width:45%; margin-right:0.5vw; padding-left: 0.5vw;">
-                    <h3 style="margin-bottom: 0.5vh;">ภาษาโปรแกรมมิ่งที่ใช้</h3>
-                    <ul style="margin-top:0 ;">
-                        <li>Python</li>
-                        <li>HTML, CSS, JavaScript, Vue2</li>
-                        <li>C language</li>
-                        <li>Java</li>
-                    </ul>
+                    <h3 style="margin-bottom: 0.5vh;">ภาษาที่ใช้</h3>
+                    <div>
+                        <ul style="margin-top:0; width: 50%;float: left">
+                            <li>
+                                Python<br>
+                                <meter max="1" min="0" value="0.8"></meter>
+                            </li>
+                            <li>
+                                C language<br>
+                                <meter max="1" min="0" value="0.6"></meter>
+                            </li>
+                            <li>
+                                Java<br>
+                                <meter max="1" min="0" value="0.65"></meter>
+                            </li>
+
+                        </ul>
+                        <ul style="margin-top:0; width: 50%;float: left">
+                            <li>
+                                HTML, CSS<br>
+                                <meter max="1" min="0" value="0.6"></meter>
+                            </li>
+                            <li>
+                                JavaScript<br>
+                                <meter max="1" min="0" value="0.7"></meter>
+                            </li>
+                            <li>
+                                Vue2<br>
+                                <meter max="1" min="0" value="0.5"></meter>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- education -->
-    <div class="box" style="width: 100%; height:70%">
+    <div class="box" style="width: 100%; height:100%; margin-top: 10%;">
         <section class="section intro" data-aos="fade-right">
-            <div class="container">
-                <h1>ประวัติ</h1>
+            <div class="container" id="education">
+                <h1 class="floating">ประวัติ</h1>
             </div>
         </section>
         <section class="timeline" style="margin: auto;">
-            <ol style="overflow-x: auto;">
-                <li>
+            <ol style="overflow-x: auto; padding-top:15%">
+                <li data-aos="fade-down" data-aos-delay="0" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>2543</time>เกิดวันที่ 29 ธันวาคม 2543
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>2547</time>เข้าโรงเรียนอนุบาล
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-delay="800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>2550</time>เริ่มเข้าเรียนระดับประถมที่โรงศิริวัฒน์วิทยา
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="1200" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>2556</time>ศึกษาต่อระดับมัธยมที่โรงเรียนบดินทรเดชา (สิงห์ สิงหเสนี)
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-delay="1600" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>2561</time>เข้าร่วมการแข่งขัน World Robot Olypiad 2018 ระดับ senior
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="2000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>2562</time>จบการศึกษาระดับมัธยมศึกษา
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-delay="2400" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>2563</time>เข้าศึกษาต่อในระดับอุดมศึกษาที่ คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้า เจ้าคุณทหารลาดกระบัง
                     </div>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="2800" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
                     <div>
                         <time>ปัจจุบัน</time>เป็นนักศึกษาชั้นปีที่ 2
                     </div>
                 </li>
-                <li></li>
+                <li data-aos="fade-down" data-aos-delay="3000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"></li>
             </ol>
         </section>
     </div>
     <!-- works -->
-    <div class="box preview" style="width: 100%; height: 10%;">
-        <h1>ตัวอย่างผลงานด้านการเขียนเว็ป</h1>
+    <div class="box preview" style="width: 100%; height: 10%;" id="works" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+        <h1 class="floating">ตัวอย่างผลงานด้านการเขียนเว็บ</h1>
     </div>
-    <div class="box preview" style="width: 100%; height: 85%;">
+    <div class="box preview" style="width: 100%; height: 85%;" data-aos="flip-up" data-aos-delay="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
         <iframe title="Breakout" src="breakout/breakout.html" width="90%" height="100%" frameBorder="0"></iframe>
     </div>
     <div class="box preview" style="width: 100%; height:5%">
-        <p>เกม Breakout โดย JavaScript</p>
+        <p class="floating">เกม Breakout โดย JavaScript</p>
     </div>
     <!-- contact -->
-    <div class="box mycontact" style="height:80%; width:100%;">
-        <div class="textbox" data-aos="fade-up-right">
+    <div class="box preview" style="height:100%; width:100%;">
+        <div class="textbox" id="contact">
             <h1 style="margin-bottom: 5px;margin-top: 0;text-align: center;">Contact</h1>
-            <hr style="width: 80%;height: 2px;margin-top: 0;background-color: white">
+            <hr class="hline" style="width: 80%;height: 2px;margin-top: 0;">
             <p><a href="https://www.facebook.com/tawan.thirawee/">🔗 Facebook : Thirawee Thitiwattanakornsiri</a></p>
             <p><a href="https://www.instagram.com/tawan_wnn/">🔗 Instagram : tawan.wnn</a></p>
             <p><a href="https://line.me/ti/p/tawan.twn">🔗 Line : tawan.twn</a></p>
@@ -135,14 +163,6 @@
                        63070088@kmitl.ac.th</pre></p>
         </div>
     </div>
-
-    <script>
-        AOS.init({
-            duration: 700,
-            delay: 400,
-            once: true,
-        });
-    </script>
 </body>
 
 </html>

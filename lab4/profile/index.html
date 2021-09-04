@@ -8,32 +8,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" async></script>
     <title>Profile</title>
 </head>
 
-<body>
+<body style="background-color: #F5E6CA;">
     <div class="topnav">
-        <h1 id="profile">Mr.Thirawee</h1>
-        <a class="active">ข้อมูลส่วนตัว</a>
-        <a href="html/education.html">การศึกษา</a>
-        <a href="html/works.html">ผลงาน</a>
-        <a href="html/contact.html">ติดต่อ</a>
+        <h1 id="name">Mr.Thirawee</h1>
+        <a onclick="msg(this)" id="profile" class="active">ข้อมูลส่วนตัว</a>
+        <a onclick="msg(this)" id="education">การศึกษา</a>
+        <a onclick="msg(this)" id="works">ผลงาน</a>
+        <a onclick="msg(this)" id="contact">ติดต่อ</a>
     </div>
-    <hr style="width: 80%;margin-bottom: 0;">
     <div class="body">
         <iframe title="dummy" src="dummy.html" width="100%" height="100%" frameBorder="0"></iframe>
     </div>
     <div class="footer">
-        <hr style="width: 80%; margin-top: 0;">
-        <p>โดย นายธีรวีร์ ฐิติวัฒนากรศิริ</p>
-        <p>รหัสนศ. 63070088</p>
+        <p class="footbar">โดย นายธีรวีร์ ฐิติวัฒนากรศิริ</p>
+        <p class="footbar">รหัสนศ. 63070088</p>
     </div>
     <script>
-        AOS.init();
+        function msg(e) {
+            var id = e.getAttribute("id");
+            clearActive(id)
+            window.postMessage(id, "*")
+        }
+
+        function clearActive(t) {
+            document.getElementsByClassName("active")[0].className = "";
+            document.getElementById(t).className = "active";
+        }
+
+        function headCheck(e) {
+            if (e.data == "profile") {
+                clearActive("profile")
+            } else if (e.data == "education") {
+                clearActive("education")
+            } else if (e.data == "works") {
+                clearActive("works")
+            } else if (e.data == "contact") {
+                clearActive("contact")
+            }
+        }
+        window.parent.addEventListener("message", headCheck, false);
     </script>
 </body>
 
