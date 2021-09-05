@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .message-box {
+            max-width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            word-wrap: break-word;
+            height: 50%;
+            margin-top: 2%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            border: 1px solid blue;
+        }
+        
+        .message-box .message {
+            border-radius: 1em;
+            padding: 0.25em 0.75em;
+            margin: 0.0625em;
+            max-width: 50%;
+            animation: fadeIn 1s;
+            align-self: flex-end;
+            background-color: #efefef;
+        }
+        
+        .message-box .message.first {
+            border-bottom-right-radius: 0.1em;
+        }
+        
+        .message-box .message.last {
+            border-top-right-radius: 0.1em;
+        }
+        
+        .message-box .message.middle {
+            border-bottom-right-radius: 0.1em;
+            border-top-right-radius: 0.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="message-box">
+
+
+        <div class="message recipient first">Oh that's cool!</div>
+        <div class="message recipient middle">Middle!</div>
+        <div class="message recipient last">Did you use JavaScript to perform that kind of effect?</div>
+
+        <div class="message recipient">Dope!</div>
+
+
+    </section>
+</body>
+
+</html>
