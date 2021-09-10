@@ -1,0 +1,115 @@
+[{
+        "id": 1,
+        "firstname": "Kien",
+        "lastname": "Walton",
+        "age": 27,
+        "tel": "(644) 765-5710",
+        "subject": [
+            "English",
+            "Ancient Literature"
+        ]
+    },
+    {
+        "id": 2,
+        "firstname": "Aqib",
+        "lastname": "Halliday",
+        "age": 38,
+        "tel": "(357) 266-1145",
+        "subject": [
+            "Biology",
+            "Chemistry",
+            "Astronomy"
+        ]
+    },
+    {
+        "id": 3,
+        "firstname": "Libbi",
+        "lastname": "Nash",
+        "age": 31,
+        "tel": "(817) 964-5191",
+        "subject": [
+            "Art",
+            "Music"
+        ]
+    },
+    {
+        "id": 4,
+        "firstname": "Raihan",
+        "lastname": "Crane",
+        "age": 23,
+        "tel": "(858) 311-6445",
+        "subject": [
+            "Geometry"
+        ]
+    },
+    {
+        "id": 5,
+        "firstname": "Maariyah",
+        "lastname": "Meadows",
+        "age": 35,
+        "tel": "(840) 774-2387",
+        "subject": [
+            "Japanese",
+            "Japanese History",
+            "Japanese Culture"
+        ]
+    },
+    {
+        "id": 6,
+        "firstname": "Efa",
+        "lastname": "Kent",
+        "age": 48,
+        "tel": "(970) 532-0379",
+        "subject": [
+            "Math",
+            "Statistics",
+            "Calculus",
+            "Economics"
+        ]
+    },
+    {
+        "id": 7,
+        "firstname": "Beatrice",
+        "lastname": "Christian",
+        "age": 32,
+        "tel": "(771) 560-2408",
+        "subject": [
+            "Programming",
+            "Photography"
+        ]
+    },
+    {
+        "id": 8,
+        "firstname": "Tatiana",
+        "lastname": "Kane",
+        "age": 51,
+        "tel": "(569) 354-4818",
+        "subject": [
+            "Sociology",
+            "World History",
+            "French",
+            "Yoga"
+        ]
+    },
+    {
+        "id": 9,
+        "firstname": "Leandro",
+        "lastname": "Fowler",
+        "age": 36,
+        "tel": "(666) 880-6994",
+        "subject": [
+            "Physics",
+            "Meteorology"
+        ]
+    },
+    {
+        "id": 10,
+        "firstname": "Irving",
+        "lastname": "Hodge",
+        "age": 45,
+        "tel": "(815) 491-2844",
+        "subject": [
+            "Martial Arts"
+        ]
+    }
+]
