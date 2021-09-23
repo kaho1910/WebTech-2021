@@ -1,0 +1,46 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+.body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.col {
+    width: 33.33%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    div.col {
+        min-width: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    /* width */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* Track */
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Handle on hover */
+    background: #555;
+}
