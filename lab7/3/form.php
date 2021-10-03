@@ -60,8 +60,16 @@
         </table>
         <button type='button' class='btn btn-primary' onclick='location.href=`index.html`'>back</button>
     </div>";
-    // echo $_POST["fname"];
     ?>
+    <script>
+    let body = document.querySelector("tbody");
+    let check = body.querySelectorAll("td");
+    for (let i = 0; i < check.length; i++) {
+        if (check[i].innerHTML.length < 5) {
+            check[i].style.color = "red";
+        }
+    }
+    </script>
 </body>
 
 </html>
