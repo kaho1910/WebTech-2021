@@ -21,7 +21,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <title>Lab7-3 Form</title>
+    <title>Lab7-4 Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
